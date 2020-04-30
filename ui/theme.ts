@@ -114,6 +114,15 @@ export default {
     },
     img: {
       maxWidth: '100%'
+    },
+    navlink: {
+      color: 'text',
+      fontWeight: 'body',
+      fontSize: 3,
+      cursor: 'pointer',
+      ':hover': {
+        color: 'primary'
+      }
     }
   }
 };
