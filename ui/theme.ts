@@ -76,6 +76,12 @@ export default {
       fontWeight: 'body',
       lineHeight: 'body'
     },
+    small: {
+      fontFamily: 'body',
+      fontWeight: 'body',
+      lineHeight: 'body',
+      fontSize: 1
+    },
     a: {
       color: 'primary'
     },

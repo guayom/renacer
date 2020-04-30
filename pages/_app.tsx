@@ -2,6 +2,7 @@ import { AppProps } from 'next/app';
 import { ThemeProvider } from 'theme-ui';
 import theme from '../ui/theme';
 import Head from 'next/head';
+import { Footer, Layout, Main } from '../ui';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -12,7 +13,12 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         ></link>
       </Head>
-      <Component {...pageProps} />
+      <Layout>
+        <Main>
+          <Component {...pageProps} />
+        </Main>
+        <Footer />
+      </Layout>
     </ThemeProvider>
   );
 }
