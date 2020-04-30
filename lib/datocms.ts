@@ -1,5 +1,5 @@
 import { GraphQLClient } from 'graphql-request';
-// import { DatoRequestData } from '../types/dato-data';
+import { DatoRequestData } from '../types/dato-data';
 
 interface RequestProps {
   query: string;
@@ -11,7 +11,7 @@ export const request = ({
   query,
   variables,
   preview
-}: RequestProps): Promise<any> => {
+}: RequestProps): Promise<DatoRequestData> => {
   const endpoint = preview
     ? `https://graphql.datocms.com/preview`
     : `https://graphql.datocms.com/`;

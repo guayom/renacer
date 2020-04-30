@@ -1,5 +1,5 @@
 import { request } from '../lib/datocms';
-// import { DatoRequestData } from '../types/dato-data';
+import { DatoRequestData } from '../types/dato-data';
 import { HomeHero, Section } from '../ui';
 
 const HOMEPAGE_QUERY = `query {
@@ -22,7 +22,7 @@ const HomePage = ({
   data: {
     homePage: { heroText, heroCta }
   }
-}: any) => {
+}: DatoRequestData) => {
   return (
     <>
       <HomeHero {...{ heroText, heroCta }} />

@@ -5,5 +5,5 @@ export type HomeData = {
 };
 
 export type DatoRequestData = {
-  data: HomeData;
+  data: { homePage: HomeData };
 };
