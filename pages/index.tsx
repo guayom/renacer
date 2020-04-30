@@ -1,5 +1,6 @@
 import { request } from '../lib/datocms';
 // import { DatoRequestData } from '../types/dato-data';
+import { Box } from 'theme-ui';
 
 const HOMEPAGE_QUERY = `query {
   homePage {
@@ -19,7 +20,11 @@ export async function getStaticProps() {
 }
 
 const HomePage = ({ data }: any) => {
-  return <div>{JSON.stringify(data, null, 2)}</div>;
+  return (
+    <Box p={20}>
+      <div>{JSON.stringify(data, null, 2)}</div>
+    </Box>
+  );
 };
 
 export default HomePage;

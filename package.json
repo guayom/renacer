@@ -15,10 +15,13 @@
     "jest.config.js"
   ],
   "dependencies": {
+    "@types/theme-ui": "^0.3.1",
     "graphql-request": "^1.8.2",
     "next": "^9.3.0",
     "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react-dom": "^16.13.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "theme-ui": "^0.3.1"
   },
   "devDependencies": {
     "@types/jest": "^25.1.4",
