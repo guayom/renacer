@@ -15,6 +15,7 @@
     "jest.config.js"
   ],
   "dependencies": {
+    "@theme-ui/style-guide": "^0.3.0",
     "@types/theme-ui": "^0.3.1",
     "graphql-request": "^1.8.2",
     "next": "^9.3.0",
