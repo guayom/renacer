@@ -21,6 +21,9 @@ export default {
     primary: '#6bd4c8',
     darkBackground: '#222'
   },
+  sizes: {
+    container: '70em'
+  },
   styles: {
     root: {
       fontFamily: 'body',

@@ -2,7 +2,7 @@ import { AppProps } from 'next/app';
 import { ThemeProvider } from 'theme-ui';
 import theme from '../ui/theme';
 import Head from 'next/head';
-import { Footer, Layout, Main } from '../ui';
+import { Footer, Header, Layout, Main } from '../ui';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -14,6 +14,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         ></link>
       </Head>
       <Layout>
+        <Header />
         <Main>
           <Component {...pageProps} />
         </Main>

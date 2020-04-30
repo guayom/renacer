@@ -1,9 +1,9 @@
 import { TypeScale, TypeStyle, ColorPalette } from '@theme-ui/style-guide';
-import { Box, Styled } from 'theme-ui';
+import { Container, Styled } from 'theme-ui';
 
 const StyleGuide: React.FC = () => {
   return (
-    <Box p={40}>
+    <Container py={4}>
       <Styled.h1>Style Guide</Styled.h1>
       <ColorPalette />
       <TypeScale />
@@ -14,7 +14,7 @@ const StyleGuide: React.FC = () => {
         Heading font regular
       </TypeStyle>
       <p>This is a paragraph</p>
-    </Box>
+    </Container>
   );
 };
 
