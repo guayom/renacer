@@ -22,28 +22,28 @@ export default {
     darkBackground: '#222'
   },
   sizes: {
-    container: '70em'
+    container: '60em'
   },
   styles: {
     root: {
       fontFamily: 'body',
       lineHeight: 'body',
       fontWeight: 'body',
-      fontSize: 2
+      fontSize: 3
     },
     h1: {
       color: 'text',
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: 5
+      fontSize: 2
     },
     h2: {
       color: 'text',
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
-      fontSize: 4
+      fontSize: 5
     },
     h3: {
       color: 'text',
@@ -123,6 +123,15 @@ export default {
       ':hover': {
         color: 'primary'
       }
+    },
+    whiteSection: {
+      backgroundColor: 'background'
+    },
+    darkSection: {
+      backgroundColor: 'darkBackground',
+      color: 'background',
+      background: 'url(/images/bg.jpg)',
+      backgroundAttachment: 'fixed'
     }
   }
 };

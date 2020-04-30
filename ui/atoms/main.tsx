@@ -6,9 +6,7 @@ const Main: React.FC = ({ children }) => {
     <main
       sx={{
         width: '100%',
-        flex: '1 1 auto',
-        paddingLeft: 3,
-        paddingRight: 3
+        flex: '1 1 auto'
       }}
     >
       {children}

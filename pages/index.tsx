@@ -1,12 +1,11 @@
 import { request } from '../lib/datocms';
 // import { DatoRequestData } from '../types/dato-data';
-import { Box } from 'theme-ui';
+import { HomeHero, Section } from '../ui';
 
 const HOMEPAGE_QUERY = `query {
   homePage {
     heroText
     heroCta
-    whoTitle
   }
 }`;
 
@@ -19,11 +18,16 @@ export async function getStaticProps() {
   };
 }
 
-const HomePage = ({ data }: any) => {
+const HomePage = ({
+  data: {
+    homePage: { heroText, heroCta }
+  }
+}: any) => {
   return (
-    <Box p={20}>
-      <div>{JSON.stringify(data, null, 2)}</div>
-    </Box>
+    <>
+      <HomeHero {...{ heroText, heroCta }} />
+      <Section>Hello</Section>
+    </>
   );
 };
 
